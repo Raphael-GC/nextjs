@@ -36,7 +36,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #1DA1F2;
   text-decoration: none;
 }
 
@@ -62,14 +62,72 @@
   font-size: 1.5rem;
 }
 
-.code {
+/*.code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}*/
+
+/*  White Button Style */
+
+.animated-button-blue {
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  height: 60px;
+  width: 220px;
+  color: #ffffff;
+  background-color: transparent;
+  outline: none;
+  border: 5px solid transparent;
+  position: relative;
+  cursor: pointer;
 }
+
+.animated-button-blue::before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 3px solid transparent;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.animated-button-blue::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 3px solid transparent;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.animated-button-blue:hover::before {
+  height: 60px;
+  width: 220px;
+  border: 3px solid #ffffff;
+
+  border-right: none;
+  border-bottom: none;
+  transition: height 0.5s linear, width 0.5s linear 0.5s;
+}
+
+.animated-button-blue:hover::after {
+  height: 60px;
+  width: 200px;
+  border: 3px solid #ffffff;
+  border-left: none;
+  border-top: none;
+  transition: height 0.5s linear, width 0.5s linear 0.5s;
+}
+/* End White Button Style */
 
 .grid {
   display: flex;

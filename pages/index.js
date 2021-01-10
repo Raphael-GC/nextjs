@@ -15,8 +15,8 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          I'm a Full Stack Web Developer {' '}
-          <code className={styles.code}>student at Rocketseat</code>
+          I'm a Developer {' '}
+          <code href="https://app.rocketseat.com.br/me/raphaelcarneiro" className={styles.animated-button-blue}>student at Rocketseat</code>
         </p>
 
         <div className={styles.grid}>
@@ -31,12 +31,14 @@ export default function Home() {
           </a>
 
         </div>
+
+        
       </main>
 
       <footer className={styles.footer}>
-        <p>Made with ❤ by 
+        <p>With ❤ by 
           <a href="https://github.com/Raphael-GC" target="_blank" rel="noopener noreferrer">Raphael Carneiro</a>
-          <a> | Cultive uma  {' '} <img src="/favicon.ico" alt="Lumus" className={styles.logo} /></a>
+          <a>{' '} <img src="/favicon.ico" alt="Lumus" className={styles.logo} /></a>
         </p>  
       </footer>
     </div> 
