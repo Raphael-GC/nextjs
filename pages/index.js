@@ -14,9 +14,8 @@ export default function Home() {
           Welcome to <a href="https://www.linkedin.com/in/raphaelgci9/"> my Page</a>
         </h1>
 
-        <p className={styles.description}>
-          I'm a Developer {' '}
-          <code href="https://app.rocketseat.com.br/me/raphaelcarneiro" className={styles.animated-button-blue}>student at Rocketseat</code>
+        <p className={styles.description}>I'm a Developer {' '}
+          <code className={styles.animated} href="https://app.rocketseat.com.br/me/raphaelcarneiro">student at Rocketseat</code>
         </p>
 
         <div className={styles.grid}>
@@ -36,9 +35,9 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>With ❤ by 
-          <a href="https://github.com/Raphael-GC" target="_blank" rel="noopener noreferrer">Raphael Carneiro</a>
-          <a>{' '} <img src="/favicon.ico" alt="Lumus" className={styles.logo} /></a>
+        <p>With 💖 by
+          <a href="https://github.com/Raphael-GC" target="_blank" rel="noopener noreferrer"> Raphael Carneiro</a>
+          <a> | Grow a {' '} <img src="/favicon.ico" alt="Lumus" className={styles.logo} /> !</a>
         </p>  
       </footer>
     </div> 

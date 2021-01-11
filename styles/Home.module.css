@@ -26,14 +26,17 @@
 }
 
 .footer img {
-  margin-left: 0.5rem;
+  margin-left: -0.2rem;
 }
 
-.footer a {
-  display: flex;
+.footer p {
+  
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+
+
 
 .title a {
   color: #1DA1F2;
@@ -62,33 +65,33 @@
   font-size: 1.5rem;
 }
 
-/*.code {
+.code {
   background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
+  border-radius: 10px;
+  padding: 2rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}*/
+}
 
-/*  White Button Style */
+/*  Button Style */
 
-.animated-button-blue {
-  font-size: 1.1rem;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  height: 60px;
+.animated {
+  font-size: 2rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 40px;
   width: 220px;
   color: #ffffff;
   background-color: transparent;
   outline: none;
-  border: 5px solid transparent;
+  border: 2px solid transparent;
   position: relative;
   cursor: pointer;
 }
 
-.animated-button-blue::before {
-  content: '';
+.animated::before {
+  content:'';
   position: absolute;
   width: 0px;
   height: 0px;
@@ -98,7 +101,7 @@
   box-sizing: border-box;
 }
 
-.animated-button-blue::after {
+.animated::after {
   content: '';
   position: absolute;
   width: 0px;
@@ -109,25 +112,24 @@
   box-sizing: border-box;
 }
 
-.animated-button-blue:hover::before {
-  height: 60px;
+.animated:hover::before {
+  height: 40px;
   width: 220px;
   border: 3px solid #ffffff;
-
   border-right: none;
   border-bottom: none;
-  transition: height 0.5s linear, width 0.5s linear 0.5s;
+  transition: height 0.5s linear, width 0.8s linear 0.5s;
 }
 
-.animated-button-blue:hover::after {
-  height: 60px;
-  width: 200px;
+.animated:hover::after {
+  height: 40px;
+  width: 220px;
   border: 3px solid #ffffff;
   border-left: none;
   border-top: none;
-  transition: height 0.5s linear, width 0.5s linear 0.5s;
+  transition: height 0.5s linear, width 0.8s linear 0.5s;
 }
-/* End White Button Style */
+/* End Button Style */
 
 .grid {
   display: flex;
