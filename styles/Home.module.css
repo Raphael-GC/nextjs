@@ -16,30 +16,14 @@
   align-items: center;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main h1,
+.main p,
+.main h3{
+  color: var(--txt-color);
 }
-
-.footer img {
-  margin-left: -0.2rem;
-}
-
-.footer p {
-  
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
 
 .title a {
-  color: #1DA1F2;
+  color: #66CC66;
   text-decoration: none;
 }
 
@@ -65,29 +49,19 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 10px;
-  padding: 2rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
 /*  Button Style */
-
 .animated {
-  font-size: 2rem;
+  font-size: 1rem;
   padding-left: 5px;
   padding-right: 5px;
   height: 40px;
   width: 220px;
-  color: #ffffff;
+  color: var(--linhas);
   background-color: transparent;
   outline: none;
   border: 2px solid transparent;
   position: relative;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .animated::before {
@@ -114,8 +88,8 @@
 
 .animated:hover::before {
   height: 40px;
-  width: 220px;
-  border: 3px solid #ffffff;
+  width: 120px;
+  border: 1px solid var(--hovers);
   border-right: none;
   border-bottom: none;
   transition: height 0.5s linear, width 0.8s linear 0.5s;
@@ -123,8 +97,8 @@
 
 .animated:hover::after {
   height: 40px;
-  width: 220px;
-  border: 3px solid #ffffff;
+  width: 120px;
+  border: 1px solid var(--hovers);
   border-left: none;
   border-top: none;
   transition: height 0.5s linear, width 0.8s linear 0.5s;
@@ -146,9 +120,9 @@
   flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: var(--hovers);
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--linhas);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
@@ -156,8 +130,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: var(--hovers);
+  border-color: var(--hovers);
 }
 
 .card h3 {
@@ -180,4 +154,30 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid var(--linhas);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--txt-color);
+}
+.footer img {
+  margin-left: -0.2;
+  width: 5%;
+  height: 1%;
+}
+.footer p { 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer p:hover,
+.footer p:focus,
+.footer p:active {
+  color:var(--hovers);
+  border-color: var(--hovers);
 }
